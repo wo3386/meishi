@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>美食食谱 - 用心做好每一道菜</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-left">
+      <div class="logo">
+        <span class="logo-icon">🍳</span>
+        <div class="logo-text">
+          <h1>美食食谱</h1>
+          <p>用心做好每一道菜</p>
+        </div>
+      </div>
+    </div>
+    <nav class="header-nav">
+      <a href="#" class="nav-item active" data-view="home">首页</a>
+      <a href="#" class="nav-item" data-view="hot">热门推荐</a>
+      <a href="#" class="nav-item" data-view="newest">最新菜谱</a>
+      <a href="#" class="nav-item" data-view="category">分类</a>
+    </nav>
+  </header>
+
+  <div class="search-bar">
+    <span class="search-icon">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="11" cy="11" r="8"></circle>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+      </svg>
+    </span>
+    <input type="text" class="search-input" id="searchInput" placeholder="输入菜名或食材...">
+  </div>
+
+  <div class="container">
+    <aside class="sidebar">
+      <div class="sidebar-section">
+        <h3 class="sidebar-title">菜谱分类</h3>
+        <ul class="category-list" id="categoryList">
+          <li class="category-item active" data-category="all">全部菜谱</li>
+          <li class="category-item" data-category="chinese">中华美食</li>
+          <li class="category-item" data-category="western">西餐烘焙</li>
+          <li class="category-item" data-category="dessert">小吃甜点</li>
+          <li class="category-item" data-category="soup">汤羹饮品</li>
+          <li class="category-item" data-category="salad">沙拉凉菜</li>
+        </ul>
+      </div>
+
+      <div class="sidebar-section">
+        <h3 class="sidebar-title">今日推荐</h3>
+        <ul class="recommend-list" id="recommendList">
+          <li class="recommend-item" data-id="1">🍖 红烧排骨</li>
+          <li class="recommend-item" data-id="2">🌶️ 麻婆豆腐</li>
+          <li class="recommend-item" data-id="3">🍅 番茄炒蛋</li>
+        </ul>
+      </div>
+
+      <div class="sidebar-section">
+        <h3 class="sidebar-title">🎲 随机一道菜</h3>
+        <button class="random-btn" id="randomBtn">摇一摇</button>
+        <div class="random-result" id="randomResult">
+          <p class="random-placeholder">点击按钮试试手气</p>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <div class="tab-bar" id="tabBar">
+        <span class="tab-item active" data-category="all">全部</span>
+        <span class="tab-item" data-category="chinese">中华美食</span>
+        <span class="tab-item" data-category="western">西餐烘焙</span>
+        <span class="tab-item" data-category="dessert">小吃甜点</span>
+        <span class="tab-item" data-category="soup">汤羹饮品</span>
+        <span class="tab-item" data-category="salad">沙拉凉菜</span>
+      </div>
+
+      <section class="recipe-section">
+        <h2 class="section-title" id="sectionTitle">🔥 热门菜谱</h2>
+        <div class="recipe-grid" id="recipeGrid"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
