@@ -177,3 +177,5 @@ recipeGrid.addEventListener('click', (e) => {
   const card = e.target.closest('.recipe-card');
   if (card) window.location.href = `recipe.html?id=${card.dataset.id}`;
 });
+
+setActiveView('home');
