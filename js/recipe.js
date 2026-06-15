@@ -23,7 +23,7 @@ function renderDetail() {
   detailContainer.innerHTML = `
     <div class="detail-header">
       <div class="detail-icon">
-        <img src="${recipe.icon || '图片/tofu.png'}" alt="${recipe.name}" onerror="this.src='图片/tofu.png'">
+        <img src="${recipe.icon || '图片/1-红烧排骨.png'}" alt="${recipe.name}" onerror="this.src='图片/1-红烧排骨.png'">
       </div>
       <div class="detail-header-info">
         <h1 class="detail-name">${recipe.name}</h1>
